@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffffe;
+    padding: 85px 5px 0;
+    font-family: sans-serif;
+}
+
+.border{
+    border: 2px solid #ffd803;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.txtDisminuido{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #709edac7;
+}
+
+.txtDisminuidoClaro{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #fffffe;
+}
+
+.txtDestacadoOscuro{
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    color: #272343;
+    font-weight: bold;
+}
+
+.txtDestacadoClaro{
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    color: #fffffe;
+    font-weight: bold;
+}
+
+.txtCentrado{
+    text-align: center;
+    
+}
+
+.fondoOscuro{
+    background-color: #272343;
+}
+
+.espaciadoListas{
+    list-style: none;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.colorDiv{
+    background-color: #fffffe;
+}
+
+.tamanoImagen{
+    width: 100%;
+    height: 15vh;
+}
+
+/*Estilos del Header *menu de navegacion*/
+.header{
+    background-color: #272343;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;/*sirve para que no choque el header con el carrousel*/
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.navlink{
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.logo{ /*clase para darle tamaño al logo*/ 
+    width: 200px;
+    height: 80px;
+    padding: 2px 30px;
+}
+
+.navmenu{/*ul*/
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.menuitem{/*li*/
+    font-size: 18px;
+    margin: 0 30px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.navmenulink{/*li a*/
+    padding: 8px 40px;
+    border-radius: 5px;
+}
+
+.navmenulink:hover{
+background-color: #ffd803;
+transition: 0.5s;
+
+}
+
+.submenu{ /*ul ul*/
+    position: absolute;
+    display: none;
+    margin-right: 40px;
+}
+
+.submenuitem{/*ul ul li*/
+    display: block;
+    width: 100%;
+    background-color: #272343;
+    margin: 2px auto;
+    line-height: 80px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+/*Estilos para el slicer de imagenes*/
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.contentslider {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 30s;
+    animation-duration: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.slideritem{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    height: 75vh;
+}
+
+.slideritem img {
+    width: 100%;
+    height: 100%; 
+}
+
+@keyframes autoplay{
+    25%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    50%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+
+    75%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+}
+
+/*Estilos para el contenido *escritos dentro de las imagenes del slicer*/
+
+.detallecontenido{
+    position: relative;
+    top: -500px;
+    width: 500px;
+    margin: 0px;
+    padding: 10px;
+    background: #e3f6f5;
+    color: #2d334a;
+    text-align: left;
+}
+
+.detallecontenido h3{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.detallecontenido h2{
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+}
+
+.detallecontenido input[type="button"]{
+    padding: 6px 10px;
+    font-size: 13px;
+    margin-top: 5px;
+    background: #272343;
+    border-style: none;
+    color: #ffd803;
+    outline: 0px;
+    transition: all 300ms;
+
+}
+
+.detallecontenido input[type="button"]:hover{
+    background: #ffd803;
+    cursor: pointer;
+    transition: all 300ms;
+    color: #272343;
+
+}
+
+/*Estilos para la section despues del carrousel*/
+
+#bloqueGrid{
+    display: grid;
+    grid-template-areas: 
+    "txtCompa txtCompa"
+    "txtCubr txtCubr"
+    "txtEsp txtEsp"
+    "imgCli imgCli"
+    "footer1 footer2"
+    "footerFinal footerFinal";
+
+    grid-template-rows: 1fr 2fr 1fr 1fr .5fr 35px;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    margin: 0;
+}
+
+div#txtCompa{
+    grid-area: txtCompa;
+    padding: 25px;
+}
+
+div#txtCubr{
+    grid-area: txtCubr;
+    padding: 10px;
+}
+
+div#txtEsp{
+    grid-area: txtEsp;
+    padding: 10px;
+}
+
+div#imgCli{
+    grid-area: imgCli;
+    padding: 10px;
+}
+
+div#footer1{
+    grid-area: footer1;
+    padding: 10px;
+}
+
+div#footer2{
+    grid-area: footer2;
+    padding: 10px;
+}
+
+div#footerFinal{
+    grid-area: footerFinal;
+}
+
+/*Estilos para los contenidos*/
+
+.mapa{ /*clase para darle tamaño al mapa de colombia*/ 
+    width: 20%;
+    height: 45vh;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flexboxItems{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.contenidoGnral{
+    position: relative;
+    color: #2d334a;
+    text-align: center;
+    width: 20%;
+}
+
+/*Estilos para los inconos del Footer*/
+
+.iconosFooter{
+    width: 3%;
+    height: 3vh;
+}
