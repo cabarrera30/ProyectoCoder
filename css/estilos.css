@@ -117,7 +117,8 @@ body{
     border-radius: 5px;
 }
 
-.navmenulink:hover{
+.navmenulink:hover,
+.navmenulink_activate{
 background-color: #ffd803;
 transition: 0.5s;
 
@@ -139,6 +140,17 @@ transition: 0.5s;
 
 ul li:hover ul {
     display: block;
+}
+
+.nav-toggle{
+    color: #e3f6f5;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
 }
 
 /*Estilos para el slicer de imagenes*/
