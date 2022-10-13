@@ -6,7 +6,7 @@
 
 body{
     background-color: #fffffe;
-    padding: 85px 5px 0;
+    padding: 5px 5px 0;
     font-family: sans-serif;
 }
 
@@ -15,6 +15,11 @@ body{
     border-radius: 10px;
     padding: 10px;
 }
+
+.separador{
+    margin-top: 80px;
+}
+
 
 .txtDisminuido{
     font-family: sans-serif;
@@ -44,6 +49,8 @@ body{
 
 .txtCentrado{
     text-align: center;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -58,6 +65,18 @@ body{
     margin-bottom: 15px;
     line-height: 40px;
     font-size: 20px;
+}
+
+.espaciadoListas_footer{
+    display: flex;
+    justify-content:space-evenly;   
+    list-style: none;
+    line-height: 100px;
+    font-size: 20px;
+}
+
+.espaciadoListas_footer a{
+    text-decoration: none;
 }
 
 .colorDiv{
@@ -83,7 +102,7 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -159,6 +178,7 @@ ul li:hover ul {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    margin-top: 80px;
 }
 
 .contentslider {
@@ -291,11 +311,13 @@ div#imgCli{
 div#footer1{
     grid-area: footer1;
     padding: 10px;
+    height: 150px;
 }
 
 div#footer2{
     grid-area: footer2;
     padding: 10px;
+    height: 150px;
 }
 
 div#footerFinal{
@@ -338,9 +360,25 @@ div#footerFinal{
     width: 20%;
 }
 
+
 /*Estilos para los inconos del Footer*/
 
 .iconosFooter{
-    width: 3%;
+    width: 4%;
     height: 3vh;
+}
+
+/*Estilos para Pages Empresa*/
+
+.altoimg{
+    width: 100%;
+    height: 30vh;
+}
+
+p{
+    margin: 0;
+}
+
+.borde_inferior{
+    border-bottom: 1px solid #cccccc;
 }
