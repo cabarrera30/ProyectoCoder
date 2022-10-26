@@ -1,0 +1,247 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 15px; }
+  .txtBanner {
+    font-size: 25px;
+    color: #272343;
+    font-weight: bold;
+    padding: 40px 40px; }
+  .bannerPPal {
+    height: 15vh; }
+  .flex {
+    display: flex;
+    flex-direction: column; }
+  .icoFooter {
+    width: 5%;
+    padding-bottom: 5px; }
+  .imgCarousel {
+    height: 45vh; }
+  .txtBlanco {
+    font-size: 15px; }
+  .txtBlancoSub {
+    font-size: 10px; }
+  .txtOscuroSub {
+    font-size: 10px; }
+  .txtClaro {
+    font-size: 15px; }
+  .txtOscuro {
+    font-size: 15px; }
+  .fondoDivs {
+    font-size: 15px; }
+  .espaciadoListas {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    line-height: 25px; }
+  /*Estilos para los links de navegacion (Versión Mobile)*/
+  .nav {
+    font-size: 10px; }
+  /*Estilos para el contenido *escritos dentro de las imagenes del slicer*/
+  .detallecontenido h3 {
+    font-size: 15px; }
+  .detallecontenido h2 {
+    font-size: 20px; }
+  .detallecontenido h5 {
+    font-size: 20px; }
+  .detallecontenido input[type="button"] {
+    font-size: 8px; }
+  .detallecontenidoSub h3 {
+    font-size: 15px; }
+  .detallecontenidoSub h2 {
+    font-size: 20px; }
+  .detallecontenidoSub h5 {
+    font-size: 20px; }
+  .detallecontenidoSub input[type="button"] {
+    font-size: 8px; } }
+
+body {
+  background-color: #fffffe;
+  font-family: sans-serif; }
+
+header {
+  background-color: #272343; }
+
+p {
+  margin: 0px;
+  padding: 5px; }
+
+.nav-toggle {
+  background-color: #fffffe;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px; }
+
+.borde {
+  border: 1px solid #272343;
+  border-radius: 10px; }
+
+.imgLogoNav {
+  width: 100%;
+  height: 10vh; }
+
+.imgLogoFooter {
+  width: 200px;
+  height: 80px;
+  padding: 2px 30px; }
+
+.imgCarousel {
+  width: 100%;
+  height: 75vh; }
+
+.txtBlanco {
+  font-family: "Ubuntu";
+  font-size: 30px;
+  color: #fffffe;
+  font-weight: bold; }
+
+.txtBlancoSub {
+  font-family: "Ubuntu";
+  font-size: 15px;
+  color: #fffffe;
+  font-weight: lighter; }
+
+.txtOscuroSub {
+  font-family: "Ubuntu";
+  font-size: 20px;
+  color: #272343; }
+
+.txtClaro {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #6d99d3c7; }
+
+.txtOscuro {
+  font-family: "Ubuntu";
+  font-size: 30px;
+  color: #272343;
+  font-weight: bold; }
+
+.txtBanner {
+  font-family: "Ubuntu";
+  font-size: 60px;
+  color: #272343;
+  font-weight: bold;
+  padding: 80px 80px; }
+
+.fondoOscuro {
+  background-color: #272343; }
+
+.bannerPPal {
+  background-image: url("../images/Contenido/bannerempresa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh; }
+
+.fondoDivs {
+  font-family: "Ubuntu";
+  font-size: 20px;
+  color: #272343; }
+  .fondoDivs:hover {
+    background-color: #6d99d3c7;
+    opacity: 80%;
+    color: #ffd803; }
+    .fondoDivs:hover p {
+      background-color: #272343;
+      border-radius: 5px; }
+
+.espaciadoListas {
+  list-style: none;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  font-size: 20px; }
+
+/*Estilos para los links de navegacion*/
+.nav {
+  color: #fffffe;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: max-content;
+  text-decoration: none; }
+  .nav:hover {
+    background-color: #ffd803;
+    transition: 0.5s; }
+
+/*Estilos para el contenido *escritos dentro de las imagenes del slicer*/
+.detallecontenido {
+  border-radius: 5px;
+  background: #272343; }
+  .detallecontenido h3 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px; }
+  .detallecontenido h2 {
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: "Ubuntu";
+    font-weight: bold; }
+  .detallecontenido input[type="button"] {
+    padding: 6px 10px;
+    font-size: 13px;
+    margin-top: 5px;
+    background: #bae8e8;
+    border-style: none;
+    border-radius: 5px;
+    color: #272343;
+    outline: 0px;
+    transition: all 300ms; }
+    .detallecontenido input[type="button"]:hover {
+      background: #ffd803;
+      cursor: pointer;
+      transition: all 300ms;
+      color: #272343; }
+
+.detallecontenidoSub {
+  border-radius: 5px; }
+  .detallecontenidoSub h3 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px; }
+  .detallecontenidoSub h2 {
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: "Ubuntu";
+    font-weight: bold; }
+  .detallecontenidoSub h5 {
+    margin-top: 5px;
+    font-size: 30px;
+    font-family: "Ubuntu";
+    font-weight: bold; }
+  .detallecontenidoSub p {
+    font-family: sans-serif;
+    font-weight: lighter; }
+  .detallecontenidoSub ul {
+    list-style-type: '✔️'; }
+    .detallecontenidoSub ul li::marker {
+      font-size: 15px; }
+  .detallecontenidoSub input[type="button"] {
+    padding: 6px 10px;
+    font-size: 13px;
+    margin-top: 5px;
+    background: #272343;
+    border-style: none;
+    border-radius: 5px;
+    color: #ffd803;
+    outline: 0px;
+    transition: all 300ms; }
+    .detallecontenidoSub input[type="button"]:hover {
+      background: #ffd803;
+      cursor: pointer;
+      transition: all 300ms;
+      color: #272343; }
+
+.form {
+  background-color: lightgray;
+  margin: 3px;
+  border-radius: 5px; }
+  .form div label {
+    color: #272343; }

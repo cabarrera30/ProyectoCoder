@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "colores";
+@import "mobile";
+
+body{
+    background-color : $fondo;
+    font-family : $EstiloLetraSec;
+}
+
+header{
+    background-color: $ColorLetraPPal;   
+}
+
+p{
+    margin: 0px;
+    padding: 5px;
+}
+
+.nav-toggle{
+    background-color: $ColorLetraBlanca;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+
+.borde{
+    border: 1px solid $Colorborde;
+    border-radius: 10px;
+}
+
+.imgLogoNav{
+    width: 100% ;
+    height: 10vh;
+}
+
+.imgLogoFooter{
+    width: 200px;
+    height: 80px;
+    padding: 2px 30px;
+}
+
+.imgCarousel{
+    width: 100%;
+    height: 75vh;
+}
+
+.txtBlanco{
+    font-family: $EstiloLetraPPal;
+    font-size: 30px;
+    color: $ColorLetraBlanca;
+    font-weight: bold;
+}
+
+.txtBlancoSub{
+    font-family: $EstiloLetraPPal;
+    font-size: 15px;
+    color: $ColorLetraBlanca;
+    font-weight: lighter;
+}
+
+.txtOscuroSub{
+    font-family: $EstiloLetraPPal;
+    font-size: 20px;
+    color: $ColorLetraPPal;
+}
+
+.txtClaro{
+    font-family: $EstiloLetraSec;
+    font-size: 20px;
+    color: $ColorLetraSec;
+}
+
+.txtOscuro{
+    font-family: $EstiloLetraPPal;
+    font-size: 30px;
+    color: $ColorLetraPPal;
+    font-weight: bold;
+}
+
+.txtBanner{
+    font-family: $EstiloLetraPPal;
+    font-size: 60px;
+    color: $ColorLetraPPal;
+    font-weight: bold;
+    padding: 80px 80px;
+}
+
+.fondoOscuro{
+    background-color: $ColorLetraPPal;
+}
+
+.bannerPPal{
+    background-image: url("../images/Contenido/bannerempresa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+}
+
+.fondoDivs{
+    font-family: $EstiloLetraPPal;
+    font-size: 20px;
+    color: $ColorLetraPPal;
+        &:hover{
+            background-color: $ColorLetraSec;
+            opacity: 80%;
+            color: $ColorHoover;
+            p{
+                background-color: $ColorLetraPPal;
+                border-radius: 5px;
+            }
+        }
+}
+
+.espaciadoListas{
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+/*Estilos para los links de navegacion*/
+
+.nav{
+    color: $ColorLetraBlanca;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: max-content;
+    text-decoration: none;
+    &:hover{
+        background-color: #ffd803;
+        transition: 0.5s;
+    }
+}
+
+/*Estilos para el contenido *escritos dentro de las imagenes del slicer*/
+
+.detallecontenido{
+    border-radius: 5px;
+    background: $ColorLetraPPal;
+    h3{
+        font-family: $EstiloLetraSec;
+        font-weight: lighter;
+        font-size: 15px; 
+    }
+    h2{
+        margin-top: 5px;
+        font-size: 30px;
+        font-family: $EstiloLetraPPal;
+        font-weight: bold; 
+    }
+    input[type="button"]{
+        padding: 6px 10px;
+        font-size: 13px;
+        margin-top: 5px;
+        background: #bae8e8;
+        border-style: none;
+        border-radius: 5px;
+        color: $ColorLetraPPal;
+        outline: 0px;
+        transition: all 300ms;
+        &:hover{
+            background: $ColorHoover;
+            cursor: pointer;
+            transition: all 300ms;
+            color: $ColorLetraPPal; 
+        }
+    }
+}
+
+.detallecontenidoSub{
+    border-radius: 5px;
+    h3{
+        font-family: $EstiloLetraSec;
+        font-weight: lighter;
+        font-size: 15px; 
+    }
+    h2{
+        margin-top: 5px;
+        font-size: 30px;
+        font-family: $EstiloLetraPPal;
+        font-weight: bold; 
+    }
+    h5{
+        margin-top: 5px;
+        font-size: 30px;
+        font-family: $EstiloLetraPPal;
+        font-weight: bold;   
+    }
+    p{
+        font-family: $EstiloLetraSec;
+        font-weight: lighter;
+    }
+    ul{
+        list-style-type: '✔️';
+        li::marker{
+            font-size: 15px;
+        }
+    }
+    input[type="button"]{
+        padding: 6px 10px;
+        font-size: 13px;
+        margin-top: 5px;
+        background: $ColorLetraPPal;
+        border-style: none;
+        border-radius: 5px;
+        color: $ColorHoover;
+        outline: 0px;
+        transition: all 300ms;
+        &:hover{
+            background: $ColorHoover;
+            cursor: pointer;
+            transition: all 300ms;
+            color: $ColorLetraPPal; 
+        }
+    }
+}
+
+.form{
+    background-color: lightgray;
+    margin: 3px;
+    border-radius: 5px;
+    div{
+        label{
+        color: $ColorLetraPPal;
+        }
+    }
+}
