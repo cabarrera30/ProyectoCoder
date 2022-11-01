@@ -4,62 +4,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-@media (max-width: 768px) {
-  p {
-    font-size: 15px; }
-  .txtBanner {
-    font-size: 25px;
-    color: #272343;
-    font-weight: bold;
-    padding: 40px 40px; }
-  .bannerPPal {
-    height: 15vh; }
-  .flex {
-    display: flex;
-    flex-direction: column; }
-  .icoFooter {
-    width: 5%;
-    padding-bottom: 5px; }
-  .imgCarousel {
-    height: 45vh; }
-  .txtBlanco {
-    font-size: 15px; }
-  .txtBlancoSub {
-    font-size: 10px; }
-  .txtOscuroSub {
-    font-size: 10px; }
-  .txtClaro {
-    font-size: 15px; }
-  .txtOscuro {
-    font-size: 15px; }
-  .fondoDivs {
-    font-size: 15px; }
-  .espaciadoListas {
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 25px;
-    line-height: 25px; }
-  /*Estilos para los links de navegacion (Versión Mobile)*/
-  .nav {
-    font-size: 10px; }
-  /*Estilos para el contenido *escritos dentro de las imagenes del slicer*/
-  .detallecontenido h3 {
-    font-size: 15px; }
-  .detallecontenido h2 {
-    font-size: 20px; }
-  .detallecontenido h5 {
-    font-size: 20px; }
-  .detallecontenido input[type="button"] {
-    font-size: 8px; }
-  .detallecontenidoSub h3 {
-    font-size: 15px; }
-  .detallecontenidoSub h2 {
-    font-size: 20px; }
-  .detallecontenidoSub h5 {
-    font-size: 20px; }
-  .detallecontenidoSub input[type="button"] {
-    font-size: 8px; } }
-
 body {
   background-color: #fffffe;
   font-family: sans-serif; }
@@ -245,3 +189,58 @@ p {
   border-radius: 5px; }
   .form div label {
     color: #272343; }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 15px; }
+  .txtBanner {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px 40px; }
+  .bannerPPal {
+    height: 15vh; }
+  .flex {
+    display: flex;
+    flex-direction: column; }
+  .icoFooter {
+    width: 5%;
+    padding-bottom: 5px; }
+  .imgCarousel {
+    height: 45vh; }
+  .txtBlanco {
+    font-size: 15px; }
+  .txtBlancoSub {
+    font-size: 10px; }
+  .txtOscuroSub {
+    font-size: 10px; }
+  .txtClaro {
+    font-size: 15px; }
+  .txtOscuro {
+    font-size: 15px; }
+  .fondoDivs {
+    font-size: 15px; }
+  .espaciadoListas {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    line-height: 25px; }
+  /*Estilos para los links de navegacion (Versión Mobile)*/
+  .nav {
+    font-size: 10px; }
+  /*Estilos para el contenido *escritos dentro de las imagenes del slicer*/
+  .detallecontenido h3 {
+    font-size: 15px; }
+  .detallecontenido h2 {
+    font-size: 20px; }
+  .detallecontenido h5 {
+    font-size: 20px; }
+  .detallecontenido input[type="button"] {
+    font-size: 8px; }
+  .detallecontenidoSub h3 {
+    font-size: 15px; }
+  .detallecontenidoSub h2 {
+    font-size: 20px; }
+  .detallecontenidoSub h5 {
+    font-size: 20px; }
+  .detallecontenidoSub input[type="button"] {
+    font-size: 8px; } }
