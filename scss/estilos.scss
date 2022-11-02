@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 @import "colores";
-@import "mobile";
 
 body{
     background-color : $fondo;
@@ -237,13 +236,11 @@ p{
 
 @media (max-width: 768px){
 
-    p{
-        font-size: 15px;
-    }
+
     .txtBanner{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
-        padding: 40px 40px;
+        padding: 15px 25px;
     }
 
     .bannerPPal{
@@ -255,70 +252,14 @@ p{
         flex-direction: column;
     }
 
-    .icoFooter{
-        width: 5%;
-        padding-bottom: 5px;  
-    }
-
     .imgCarousel{
         height: 45vh;
-    }
+    }   
 
-    .txtBlanco{
-        font-size: 15px;
-    }
-    
-    .txtBlancoSub{
-        font-size: 10px;
-    }
-    
-    .txtOscuroSub{
-        font-size: 10px;
-    }
-    
-    .txtClaro{
-        font-size: 15px;
-    }
-    
-    .txtOscuro{
-        font-size: 15px;
-    }
-    
-    .fondoDivs{   
-        font-size: 15px;
-    }
-    
-    .espaciadoListas{
-        font-size: 15px;
-        margin-top: 0px;
-        margin-bottom: 25px;
-        line-height: 25px;
-    }
-    
-    /*Estilos para los links de navegacion (Versión Mobile)*/
-    
-    .nav{
-        font-size: 10px;
-    }
     
     /*Estilos para el contenido *escritos dentro de las imagenes del slicer*/
     
     .detallecontenido{
-        h3{
-            font-size: 15px; 
-        }
-        h2{
-            font-size: 20px;
-        }
-        h5{
-            font-size: 20px;
-        }
-        input[type="button"]{
-            font-size: 8px;
-        }
-    }
-    
-    .detallecontenidoSub{
         h3{
             font-size: 15px; 
         }
